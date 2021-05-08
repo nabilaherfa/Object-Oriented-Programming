@@ -1,0 +1,29 @@
+/*
+    Nama    : Nabilah Erfariani
+    NIM     : 13519181
+    Kelas   : K04
+    Praktikum 10
+
+*/
+
+public class ListMapEntry extends MapEntry {
+    private ListMapEntry next;
+
+    public ListMapEntry(String key, String value) {
+        // next = null
+        super(key, value);
+        this.next = null;
+    } 
+    
+    public ListMapEntry(String key, String value, ListMapEntry next) {
+        super(key, value);
+        this.next = next;
+    }
+
+    public ListMapEntry getNext() {
+        return this.next;
+    }
+    public void setNext(ListMapEntry next) {
+        this.next = next;
+    }
+}
